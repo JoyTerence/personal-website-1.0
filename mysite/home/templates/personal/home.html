@@ -1,0 +1,80 @@
+{% extends "personal/header.html" %}
+{% load staticfiles %}
+{% block content %}
+
+  <div class="inner" style="height:80vh; width:100vh; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto;">
+    <div class="container" style=" width:100%; height:100%;">
+
+      <div class="row" style="height:50%;">
+        <div class="col-md-5 col-xs-6" style="height:100%;">
+          <div class="profile-pic" style="height:100%; width:100%; padding-top:2%; padding-bottom:2%;">
+            <img src="{% static 'personal/img/profile.png' %}" style="height:100%; width:100%;"/>
+          </div>
+        </div>
+        <div class="col-md-7 col-xs-6" style="height:100%;">
+          <div class="row">
+            <div class="col-md-12 col-xs-12" style=" height:50%; padding-top:1%; padding-bottom:1%;">
+              <a class ="about-me-button" href="/about_me" style="text-decoration:none;">
+                <div class="About-me" style="background-color:#2F363D; height:100%; width:100%; display: flex; align-items: center; justify-content: center; overflow:hidden;">
+                  <center>
+                      <P style="height:auto; width:auto;"><B><font color="WHITE">  ABOUT ME </font></B>
+                      <img src="{% static 'personal/img/About-me.png' %}" style="height:30%; width:10%;"/><P>
+                  </center>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 col-xs-12" style="height:50%; padding-top:1%; padding-bottom:1%;">
+              <a class ="skills-button" href="/skills" style="text-decoration:none;">
+                <div class="Skills" style="background-color:#2F363D; height:100%; width:100%; display: flex; align-items: center; justify-content: center; overflow:hidden">
+                    <CENTER>
+                      <P style="height:auto; width:auto; overflow:hidden"><B><font color="WHITE"> SKILLS </font></B>
+                      <img src="{% static 'personal/img/skills.jpg' %}" style="height:30%; width:12%;"/><P>
+                    </CENTER>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="height:50%;">
+        <div class="col-md-9 col-xs-8" style="height:100%; padding-top:2%;">
+          <a class ="projects-button" href="/projects" style="text-decoration:none;">
+            <div class="Projects" style="background-color:#2F363D; padding-top:2%; padding-bottom:2%; height:100%; width:100%; display: flex; align-items: center; justify-content: center; overflow:hidden;">
+              <CENTER>
+                <P style="height:auto; width:auto; overflow:hidden"><B><font color="WHITE"> PROJECTS </font></B>
+                <img src="{% static 'personal/img/projects.png' %}" style="height:20%; width:8%;"/><P>
+              </CENTER>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-xs-4" style="height:100%; padding-top:2%;">
+          <div class="row">
+            <div class="col-md-12 col-xs-12" style="height:50%; padding-bottom:4%;">
+              <a class ="contactme-button" href="/contactme" style="text-decoration:none;">
+                <div class="Contact" style="background-color:#2F363D; height:100%; width:100%; display: flex; align-items: center; justify-content: center; overflow:hidden;">
+                  <CENTER>
+                    <P style="height:auto; width:auto; overflow:hidden"><B><font color="WHITE"> CONTACT ME </font></B>
+                    <img src="{% static 'personal/img/contacts.png' %}" style="height:15%; width:12%;"/><P>
+                  </CENTER>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 col-xs-12" style="height:50%; padding-top:4%;">
+              <a href="{% static 'personal/resume/joyterencebarnes.pdf' %}" download>
+                <div class="Resume" style="background-color:#2F363D; height:100%; width:100%; display: flex; align-items: center; justify-content: center; overflow:hidden;">
+                  <CENTER>
+                    <P style="height:auto; width:auto; overflow:hidden"><B><font color="WHITE"> RESUME </font></B>
+                    <img src="{% static 'personal/img/resume.png' %}" style="height:15%; width:12%;"/></P>
+                  </CENTER>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

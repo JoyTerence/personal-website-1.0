@@ -1,0 +1,94 @@
+{% extends "personal/header.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+  <style type="text/css">
+    @import url({% static 'personal/css/custom.css' %});
+  </style>
+
+  <div class="inner" id="inner" style="background-color:#2F363D;">
+    <div class="skills" id="skills-me">
+      <div class="skill">
+          <h2>C</h2>
+          <div class="rating-bar">
+            <div class="rate-7">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>C++</h2>
+          <div class="rating-bar">
+            <div class="rate-8">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>Python</h2>
+          <div class="rating-bar">
+            <div class="rate-8">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>Java</h2>
+          <div class="rating-bar">
+            <div class="rate-6">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h2>Tensorflow</h2>
+          <div class="rating-bar">
+            <div class="rate-7">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>Django</h2>
+          <div class="rating-bar">
+            <div class="rate-6">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>OpenCV</h2>
+          <div class="rating-bar">
+            <div class="rate-8">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+          <div class="skill">
+          <h2>Windows</h2>
+          <div class="rating-bar">
+            <div class="rate-9">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>Ubuntu</h2>
+          <div class="rating-bar">
+            <div class="rate-8">
+              <span class="animate white"></span>
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+
+  <a href="/">
+  <div class="home-link" id="home-link">
+    <img src="{% static 'personal/img/home.jpg' %}" style="max-height:100%; max-width:100%;" />
+  </div>
+  </a>
+
+{% endblock %}

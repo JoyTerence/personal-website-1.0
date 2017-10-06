@@ -1,0 +1,66 @@
+
+.project {
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.description {
+  padding:5%;
+}
+
+
+.link-div {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.link {
+  padding: 2%;
+  width: max-content;
+  background-color: #5bc0de;
+  box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, .4);
+}
+
+.home-link {
+  height:10%;
+  width:5%;
+  position:absolute;
+  right:5%;
+  bottom:1%;
+  background-color:#2f363d;
+  padding-top: 0.5%;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inner {
+  height:80vh;
+  width:100vh;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+
+  -webkit-animation-name: zoom_in; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: zoom_in;
+  animation-duration: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes zoom_in {
+    from {height:0vh; width:0vh;}
+    to {height:80vh;width:100vh;}
+}
+
+/* Standard syntax */
+@keyframes zoom_in {
+  from {height:0vh; width:0vh;}
+  to {height:80vh;width:100vh;}
+}

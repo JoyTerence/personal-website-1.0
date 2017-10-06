@@ -1,0 +1,42 @@
+{% extends "personal/header.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+  <style type="text/css">
+    @import url({% static 'personal/css/custom.css' %});
+  </style>
+
+  <div class="inner" id="inner" style="background-color:#2F363D;">
+    <div class="about-me" id="about-me">
+      <div class="about-me-content" id="about-me-content">
+        <img src="{% static 'personal/img/pic.jpg' %}" style="height:25%; width:25%;"/>
+        <font style="color:white; font-size: 1.5em;">
+          <BR>
+          <B>
+          Joy Barnes.
+          <BR>
+          <BR>
+          Technical Associate at Avaya, Bangalore.
+          <BR>
+          <BR>
+          Past : R.V. College, Bangalore( CGPA : 9.20 )
+          <BR>
+          <BR>
+          A passionate coder, always eager to learn new and fun concepts, with a keen interest on developing anything that proves useful to others.
+          <BR>
+          <BR>
+          Feel free to get in touch with me, I'll be more than happy to work on something disruptive! :)
+          </B>
+        </font>
+      </div>
+    </div>
+  </div>
+
+  <a href="/">
+  <div class="home-link" id="home-link">
+    <img src="{% static 'personal/img/home.jpg' %}" style="max-height:100%; max-width:100%;" />
+  </div>
+  </a>
+
+{% endblock %}
